@@ -1,0 +1,6 @@
+prueba : ULONG.
+nada : UINT.
+segundo: ULONG.
+LET prueba = 2.
+segundo = UI_UL(4 + 5 + prueba + 4).
+

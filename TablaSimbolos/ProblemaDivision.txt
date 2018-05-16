@@ -1,0 +1,6 @@
+Lexema:	CAD3	Contenido: "Se hizo la division incorrectamente" Token: 267	Tipo: false	Numero de linea:	8
+Lexema:	CAD2	Contenido: "Se hizo la division correctamente" Token: 267	Tipo: false	Numero de linea:	6
+Lexema:	CAD1	Contenido: "Se realizo la division" Token: 267	Tipo: false	Numero de linea:	4
+Lexema:	CAD0	Contenido: "Se va a realizar la division" Token: 267	Tipo: false	Numero de linea:	2
+Lexema:	1	Token: 275	Tipo: true	Numero de linea:	5
+Lexema:	@x	Token: 278	Tipo: true	Numero de linea:	1

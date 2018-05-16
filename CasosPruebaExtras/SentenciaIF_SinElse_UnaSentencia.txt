@@ -1,0 +1,4 @@
+prueba : UINT.
+IF ( 4 < 6) THEN
+	prueba=2.
+END_IF

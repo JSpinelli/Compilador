@@ -1,0 +1,13 @@
+prueba : ULONG.
+nada : UINT.
+IF ( 2+2 <> 2 ) THEN
+BEGIN
+prueba=nada.
+nada=prueba.
+END.
+ELSE
+BEGIN
+prueba=2.
+nada=nada.
+END.
+END_IF

@@ -1,0 +1,9 @@
+ X : UINT.
+ Y : ULONG.
+ X = 32.
+ Y = 70000.
+ LET X = Y.
+ IF ( X > 80000 ) THEN BEGIN
+	OUT("Funciona").
+	END.
+ END_IF

@@ -1,0 +1,5 @@
+ IF ( 5 < 10 ) THEN BEGIN
+	OUT("5 es menor que 10").
+	END.
+ END_IF
+

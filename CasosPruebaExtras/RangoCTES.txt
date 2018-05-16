@@ -1,0 +1,5 @@
+constante : UINT.
+constante = 0.
+constante = 4294967295.
+constante = -1.
+constante = 4294967297.

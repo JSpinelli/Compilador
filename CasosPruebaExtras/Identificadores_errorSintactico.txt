@@ -1,0 +1,5 @@
+prueba1 : UINT.
+prueba2_ : UINT.
+masLargoDeLoPermitido : UINT.
+1asd : UINT.
+_prueba : UINT.

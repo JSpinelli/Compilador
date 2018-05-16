@@ -1,0 +1,29 @@
+prueba : ULONG.
+nada : UINT.
+
+IF ( prueba <> nada ) THEN
+	BEGIN
+	prueba=nada.
+	nada=prueba.
+	END.
+ELSE
+	BEGIN
+	prueba=2.
+	nada=nada.
+	END.
+END_IF
+
+
+hola : ULONG.
+chau : UINT.
+
+SWITCH ( prueba ) {
+	CASE 1 : BEGIN prueba= 2. END.
+	CASE 2 : BEGIN
+	nada=3.
+	END.
+}.
+
+OUT ( "Esto es una cadena multi...
+Linea" ).
+

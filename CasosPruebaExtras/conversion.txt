@@ -1,0 +1,4 @@
+ X : ULONG.
+ Y: UINT.
+ Y=5.
+ X = UI_UL (Y + 4).

@@ -1,0 +1,22 @@
+G : UINT.
+	G = 32.
+	SWITCH ( G ) {
+		CASE 1: BEGIN IF (10 < 3) THEN BEGIN 
+						OUT("No deberia entrar aca porque G es 32"). END. 
+					 ELSE BEGIN 
+						OUT("No deberia entrar aca porque G es 32"). END. 
+					 END_IF 
+				END.
+		CASE 2: BEGIN IF ( G < 27) THEN BEGIN 
+						OUT("No deberia entrar aca porque G es 32"). END. 
+					 ELSE BEGIN 
+						OUT("No deberia entrar aca porque G es 32"). END. 
+					 END_IF 
+				END.
+		CASE 32: BEGIN IF ( G < 3) THEN BEGIN 
+						OUT("No deberia entrar aca porque G es 32"). END. 
+					 ELSE BEGIN 
+						OUT("Deberia entrar aca porque G es 32"). END. 
+					 END_IF 
+				END.
+		}.

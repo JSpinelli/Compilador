@@ -1,0 +1,15 @@
+Y:UINT.
+Y=2.
+IF ( Y < 3 ) THEN BEGIN
+	IF ( Y < 3 ) THEN BEGIN
+		OUT("Y es menor a 3").
+	END.
+	ELSE BEGIN
+		OUT("Y es mayor o igual a 3").
+		END.
+	END_IF 
+	END.
+ ELSE BEGIN
+	 OUT("Y es mayor o igual a 3").
+	END.
+END_IF

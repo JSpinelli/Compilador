@@ -1,0 +1,92 @@
+X : ULONG.
+X= 400000.
+X : UINT.
+X= 1+1.	**Testeo de Switch, suma y shadowing**
+SWITCH ( X ) {
+	CASE 1 : BEGIN 
+		OUT("Este es el CASE 1"). 
+		X = X+1.
+	END.
+	CASE 2 : BEGIN
+		OUT("Este es el CASE 2").
+		X = X+1.		
+	END.
+	CASE 3 : BEGIN
+		OUT("Este es el CASE 3"). 
+		X = X+1.
+	END.
+	CASE 4 : BEGIN
+		OUT("Este es el CASE 4"). 
+		X = X+1.
+	END.
+}.
+
+Y:ULONG.
+LET Y=X-1. **Testeo de LET y Resta, modificar 1 por 4 si se quiere verificar error en la resta**
+IF ( Y < 3 ) THEN BEGIN
+	OUT("Y es menor a 3").
+	END.
+ ELSE BEGIN
+	 OUT("Y es mayor o igual a 3").
+	END.
+END_IF 
+
+Z:ULONG.
+Z = UI_UL(4 + 5 + Y + 4). **Testeo de conversion, y IFs sin bloques y permanencia de la variable Y como UINT**
+
+IF ( Z > UI_UL ( 200 ) ) THEN 
+	OUT("Z es mayor a 200").
+ ELSE 
+	OUT("Z es menor a 200").
+END_IF 
+
+Z:UINT.
+z = 4 + 8 * 1. **Testeo de precedencia, diferencias en mayusculas y Shadowing**
+
+IF ( Z == 12 ) THEN 
+	BEGIN
+	OUT("La precedencia anda bien").
+	z = z * 2 - 1.
+	IF ( z==23 ) THEN
+		OUT("Demostracion de anidamiento"). **Testeo de anidamiento de IFs**
+	END_IF
+	END.
+END_IF 
+
+X : ULONG.
+X= 80000 / UI_UL ( 1 ).  **Testeo de division, conversion en expresion y Shadowing**
+OUT("Se realizo la division").
+IF ( X == 80000 ) THEN
+	OUT("Se hizo la division correctamente").
+ ELSE
+	OUT("Se hizo la division incorrectamente").
+END_IF 
+
+J:UINT.
+j= 1.			 **Testeo de anidamiento**
+SWITCH ( j ) {
+	CASE 1 : BEGIN 
+		OUT("Este es el anidamiento 1").
+		SWITCH ( j ) {
+			CASE 1 : BEGIN 
+				OUT("Este es el anidamiento 2"). 
+				SWITCH ( j ) {
+					CASE 1 : BEGIN 
+						OUT("Este es el anidamiento 3").
+				END.
+				}.
+			END.
+		}.
+	END.
+}.
+**Testeo de Switch con IF sin ELSE anidado y Cadena multilinea**
+SWITCH ( j ) {
+	CASE 1 : BEGIN 
+		IF ( j <= 4) THEN
+			OUT("Esta es una cadena...
+multilinea").
+		END_IF
+	END.
+}.
+
+

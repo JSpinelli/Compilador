@@ -1,0 +1,54 @@
+X : ULONG.
+X= 400000.
+X : UINT.
+X= 1+1.	**Testeo de Switch, suma y shadowing**
+SWITCH ( X ) {
+	CASE 1 : BEGIN 
+		OUT("Este es el CASE 1"). 
+		X = X+1.
+	END.
+	CASE 2 : BEGIN
+		OUT("Este es el CASE 2").
+		X = X+1.		
+	END.
+	CASE 3 : BEGIN
+		OUT("Este es el CASE 3"). 
+		X = X+1.
+	END.
+	CASE 4 : BEGIN
+		OUT("Este es el CASE 4"). 
+		X = X+1.
+	END.
+}.
+
+Y:ULONG.
+LET Y=X-1. **Testeo de LET y Resta, modificar 1 por 4 si se quiere verificar error en la resta**
+IF ( Y < 3 ) THEN BEGIN
+	OUT("Y es menor a 3").
+	END.
+ ELSE BEGIN
+	 OUT("Y es mayor o igual a 3").
+	END.
+END_IF 
+
+Z:ULONG.
+Z = UI_UL(4 + 5 + Y + 4). **Testeo de conversion y permanencia de la variable Y como UINT**
+
+IF ( Z > UI_UL ( 200 ) ) THEN 
+	OUT("Z es mayor a 200").
+ ELSE 
+	OUT("Z es menor a 200").
+END_IF 
+
+Z:UINT.
+z = 4 + 8 * 1. **Testeo de precedencia, diferencias en mayusculas y Shadowing**
+
+IF ( Z == 12 ) THEN 
+	BEGIN
+	OUT("La precedencia anda bien").
+	z = z * 2 - 1.
+	IF ( 12==12 ) THEN
+		OUT("Demostracion de anidamiento"). **Testeo de anidamiento de IFs**
+	END_IF
+	END.
+END_IF 

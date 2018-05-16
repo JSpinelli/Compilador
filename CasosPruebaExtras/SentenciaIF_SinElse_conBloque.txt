@@ -1,0 +1,6 @@
+prueba : UINT.
+IF ( 6 < prueba ) THEN
+BEGIN
+prueba = 4.
+END.
+END_IF

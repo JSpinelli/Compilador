@@ -1,0 +1,9 @@
+prueba : ULONG.
+nada : UINT.
+SWITCH ( nada ) {
+	CASE 1 : BEGIN nada= 2. END.
+	CASE 2 : BEGIN
+	nada=3.
+	END.
+}.
+

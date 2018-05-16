@@ -1,0 +1,8 @@
+ x : UINT.
+ X = 3.
+ SWITCH ( x ) {
+	CASE 1: BEGIN OUT( "No deberia entrar aca porque x es 3" ). END.
+	CASE 2: BEGIN OUT( "No deberia entrar aca porque x es 3"). END.
+	CASE 3: BEGIN OUT( "Deberia entrar aca porque x es 3"). END.
+ }.
+ 

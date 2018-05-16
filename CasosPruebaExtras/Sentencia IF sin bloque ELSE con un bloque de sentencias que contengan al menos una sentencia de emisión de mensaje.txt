@@ -1,0 +1,7 @@
+	G : UINT.
+	IF ( 5 < 10 ) THEN BEGIN
+		G = 7.
+		OUT("5 es menor que 10").
+		G = 80.
+		END.
+	END_IF

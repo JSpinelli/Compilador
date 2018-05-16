@@ -1,0 +1,9 @@
+X : UINT.
+OUT("Se va a realizar la division").
+X= 1 /1.
+OUT("Se realizo la division").
+IF ( X == 1 ) THEN
+	OUT("Se hizo la division correctamente").
+ ELSE
+	OUT("Se hizo la division incorrectamente").
+END_IF 

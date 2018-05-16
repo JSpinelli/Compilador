@@ -1,0 +1,16 @@
+O:UINT.
+O = 1.
+OUT("Pantalla de prueba").
+SWITCH ( O ) {
+	CASE 1 : BEGIN 
+		OUT("Nada").
+		SWITCH ( O ) {
+			CASE 0 : BEGIN 
+				OUT("Entro correctamente al Segundo Case anidado"). 
+			END.
+		}.
+	END.
+	CASE 2 : BEGIN
+		OUT("Este es el CASE 2").	
+	END.
+}.

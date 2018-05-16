@@ -1,0 +1,6 @@
+G:UINT.
+IF ( 10+3 < 15*3 ) THEN 
+		OUT("13 es menor que 45").
+	ELSE 
+		OUT("13 no es menor que 45").
+	END_IF

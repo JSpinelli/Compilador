@@ -1,0 +1,9 @@
+X : ULONG.
+OUT("Se va a realizar la division").
+X= 80000 + UI_UL ( 4 ).
+OUT("Se realizo la division").
+IF ( X == 80000 ) THEN
+	OUT("Se hizo la division correctamente").
+ ELSE
+	OUT("Se hizo la division incorrectamente").
+END_IF 

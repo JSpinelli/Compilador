@@ -1,0 +1,7 @@
+X : UINT.
+X= 4.
+X : ULONG.
+X= 123456.
+IF ( X > 85000) THEN 
+	OUT("Deberia entrar aca pues x es 123456").
+END_IF 

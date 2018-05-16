@@ -1,0 +1,4 @@
+x : UINT.
+y : UINT.
+Y = 0.
+X = 23 / Y.
